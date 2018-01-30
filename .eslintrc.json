@@ -1,0 +1,53 @@
+{
+    "plugins": [
+        "jasmine",
+        "vue"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jasmine": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "indent": [
+            "error",
+            2,
+            { "SwitchCase": 1 }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "semi": [
+            "warn",
+            "never"
+        ],
+        "no-console": 0,
+        "eqeqeq": ["error", "always", {"null": "ignore"}],
+        "no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": true,
+            "argsIgnorePattern": "^_"
+          }
+        ]
+    }
+}
